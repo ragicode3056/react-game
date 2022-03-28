@@ -69,3 +69,69 @@ code {
 .hm-gm-rule-mrg{
   margin-top:50px !important;
 }
+
+/* Round 1 css */
+.r1-row{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  width: 1450px;
+  padding: 15px;
+}
+.r1-img-card{
+    width: 600px;
+    height: 300px;
+    box-shadow: 1px 1px 1px 1px #f4efe8;
+    padding: 5px;
+}
+.r1-timer-card , .r1-increment-crad,.r1-count-card{
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 200px;
+  box-shadow: 1px 1px 1px 1px #f4efe8;
+    padding: 5px;
+    margin-top: 40px;
+}
+.r1-contanier{
+  
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.r1-timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 200px;
+}
+.r1-increment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 200px;
+  font-size: 40px;
+}
+.r1-count-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 200px;
+  font-size: 40px;
+}
+.r1-header{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.r1-main-div{
+  margin-top:100px;
+}
+.r1-img{
+  width: 600px;
+  height: 300px;
+}
