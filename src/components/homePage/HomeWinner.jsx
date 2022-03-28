@@ -1,10 +1,15 @@
+import cardImg from '../imgs/img-banner.png';
+import { HomeGameRule } from './HomeGameRules';
+import { HomeLePlay } from './HomeLetPlay';
 export const HomeWinner = () =>{
     return (
         <div className="card bg-dark text-white">
-            <img className="card-img" src="..." alt="Card image"/>
+            <img className="card-img" src={cardImg} alt="Card image"/>
             <div className="card-img-overlay">
-                <h5 className="card-title">Who wins the hot seat?</h5>
-                <p class="card-text">If you have the opportunity to play this game of life you need to appreciate every moment.</p>
+                <h5 className="card-title hm-card-title" >Who wins the hot seat?</h5>
+                <p className="card-text hm-card-quotes">Whatever we believe about ourselves and our ability comes true for us.</p>
+                <HomeLePlay/>
+                <HomeGameRule/>
             </div>
         </div>
     )

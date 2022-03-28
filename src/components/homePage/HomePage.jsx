@@ -10,8 +10,6 @@ export const HomePage = () =>{
             <HomeHeader></HomeHeader>
             <NavItems></NavItems>
             <HomeWinner/>
-            <HomeLePlay/>
-            <HomeGameRule/>
         </div>
        
     )

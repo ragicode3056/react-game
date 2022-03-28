@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Home page styles */
+.headerDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1500px;
+  background: black;
+  color: white;
+}
+.logo{
+  width: 100px;
+  height: 40px;
+
+}
+.fun-friday-mrgn{
+  margin:5px 20px 0 0;
+  font-size:20px;
+}
+.flex-end-nav{
+  justify-content:flex-end !important ;
+  margin-right: 18px;
+}
+.nav-mrg-rt{
+  margin-right:10px;
+  font-size: 16px;
+}
+.hm-card-title{
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  height: 50px;
+  color: black;
+  margin-top: 40px
+}
+.hm-card-quotes{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 20px;
+}
+.hm-let-play-div{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 400px;
+}
+.hm-let-ply-btn{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: black !important;
+    width: 150px;
+    border: none !important;
+}
+.hm-gm-rule-mrg{
+  margin-top:50px !important;
+}

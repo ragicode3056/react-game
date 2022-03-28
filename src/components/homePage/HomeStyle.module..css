@@ -1,0 +1,13 @@
+.headerDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1500px;
+    background: black;
+    color: white;
+}
+.logo{
+    width: 100px;
+    height: 40px;
+
+}
