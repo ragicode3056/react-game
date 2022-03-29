@@ -2,6 +2,7 @@ import { HomePage } from "./homePage/HomePage"
 import {Route,Routes} from 'react-router-dom';
 import { RoundOne } from "./Round1/RoundOne";
 import { RoundTwo } from "./Round2/RoundTwo";
+import { RoundThree } from "./Round3/RoundThree";
 
 
 export const Game = () =>{
@@ -14,7 +15,8 @@ export const Game = () =>{
         <div>
             {/* <HomePage/> */}
             {/* <RoundOne/> */}
-            <RoundTwo/>
+            {/* <RoundTwo/> */}
+            <RoundThree/>
         </div>
         
        
