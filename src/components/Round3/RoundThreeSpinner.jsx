@@ -1,34 +1,34 @@
 import React, { Component } from 'react'
+import { useState } from 'react';
 
 import WheelComponent from 'react-wheel-of-prizes';
+import { RoundThreeWinnerDisplay } from './RoundThreeWinnerDisplay';
 // import 'react-wheel-of-prizes/dist/index.css';
 
 export const RoundThreeSpinner = () =>{
+
+    const [finalist,setFinalist] = useState("");
+   
     const segments = [
-        'better luck next time',
-        'won 70',
-        'won 10',
-        'better luck next time',
-        'won 2',
-        'won uber pass',
-        'better luck next time',
-        'won a voucher'
+        'Person A',
+        'Person B',
+        'Person C'
       ]
       const segColors = [
         '#EE4040',
         '#F0CF50',
-        '#815CD1',
-        '#3DA5E0',
-        '#34A24F',
-        '#F9AA1F',
-        '#EC3F3F',
-        '#FF9000'
+        '#815CD1'
       ]
       const onFinished = (winner) => {
         console.log(winner)
+        setFinalist(winner);
+        return winner;
       }
+     
+  
       return (
-        <WheelComponent
+        <div className = "r3-wheel">
+            <WheelComponent
           segments={segments}
           segColors={segColors}
           winningSegment='won 10'
@@ -37,10 +37,13 @@ export const RoundThreeSpinner = () =>{
           contrastColor='white'
           buttonText='Spin'
           isOnlyOnce={false}
-          size={290}
+          size={190}
           upDuration={100}
           downDuration={1000}
           fontFamily='Arial'
         />
+        <RoundThreeWinnerDisplay winner = {finalist}/>
+        </div>
+      
       )
 }
