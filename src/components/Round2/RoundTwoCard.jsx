@@ -12,8 +12,8 @@ export const RoundTwoCard = (props) =>{
             </div>
             <div className="r2-view-answer-card">
                 <div className = "r2-view-ans">
-                    <div className='r2-view-ans-btn'>
-                        View Answer
+                    <div className='r2-view-ans-btn' onClick = {props.onclick}>
+                      {props.ans}
                     </div>
                 </div>
             </div>

@@ -2,29 +2,58 @@ import { HomeHeader } from "../homePage/HomeHeader";
 import { NavItems } from "../homePage/NavItems";
 import { RoundTwoCard } from "./RoundTwoCard";
 import { RoundTwoHeader } from "./RoundTwoHeader";
-import r2Sample from '../imgs/r1-sample.png';
-import r2OneI from '../imgs/r1-crsipin.png';
-import r2TwoI from '../imgs/r1-3.png';
-import r2ThreeI from '../imgs/r1-4.png';
-import r2FourI from '../imgs/r1-5.png';
+import r2Sample from '../imgs/veticanCity.png';
+import r2OneI from '../imgs/infosys.png';
+import r2TwoI from '../imgs/dubai.png';
+import r2ThreeI from '../imgs/network.png';
+import r2FourI from '../imgs/ukraineWar.png';
+import r2ExtraI from '../imgs/network.png'
+import { useState } from "react";
 
 export const RoundTwo = () =>{
-    let sampleQsn = "Sample Qsn 1";
-    let r2One = "1st qsn";
-    let r2Two = "2nd qsn";
-    let r2Three = "3rd qsn";
-    let r2Four = "4th qsn";
+    let sampleQsn = "Sample Qsn  - What is the smallest country in the world, based on landmass?";
+    let r2One = "Qsn 1 - Who is the founder of Infosys?";
+    let r2Two = "Qsn 2 - Who is this hero ?";
+    let r2Three = "Qsn 3 - Name of this place";
+    let r2Four = "Qsn 4 - Name of the series and character";
+    let r2Extra = "Extra Qsn - Which mobile network launched Offers 500GB Data and Hotstar Premium Subscription?"
    
+    const [sampleAns,setSampleAns] = useState("View Answer");
+    const [r2_1Ans,set_r2_1_Ans] = useState("View Answer");
+    const [r2_2Ans,set_r2_2_Ans] = useState("View Answer");
+    const [r2_3Ans,set_r2_3_Ans] = useState("View Answer");
+    const [r2_4Ans,set_r2_4_Ans] = useState("View Answer");
+    const [r2_extraAns,setr2_extraAns] = useState("View Answer");
+
+   const answerHandler = () =>{
+       setSampleAns("vetican city");
+   }
+   const answerHandler1 = () =>{
+    set_r2_1_Ans("CEO");
+    }
+    const answerHandler2 = () =>{
+        set_r2_2_Ans("Dubai");
+    }
+    const answerHandler3 = () =>{
+        set_r2_3_Ans("Hero");
+    }
+    const answerHandler4 = () =>{
+        set_r2_4_Ans("netflix");
+    }
+    const answerHandler5 = () =>{
+        setr2_extraAns("netflix");
+    }
     return (
         <div>
             <HomeHeader/>
            <NavItems/>
            <RoundTwoHeader/>
-           <RoundTwoCard imgs = {r2Sample} qsn = {sampleQsn}/>
-           <RoundTwoCard imgs = {r2OneI} qsn = {r2One}/>
-           <RoundTwoCard imgs = {r2TwoI} qsn = {r2Two}/>
-           <RoundTwoCard imgs = {r2ThreeI} qsn = {r2Three}/>
-           <RoundTwoCard imgs = {r2FourI} qsn = {r2Four}/>
+           <RoundTwoCard imgs = {r2Sample} qsn = {sampleQsn} ans = {sampleAns} onclick = {answerHandler}/>
+           <RoundTwoCard imgs = {r2OneI} qsn = {r2One} ans = {r2_1Ans} onclick = {answerHandler1}/>
+           <RoundTwoCard imgs = {r2TwoI} qsn = {r2Two} ans = {r2_2Ans} onclick = {answerHandler2}/>
+           <RoundTwoCard imgs = {r2ThreeI} qsn = {r2Three} ans = {r2_3Ans} onclick = {answerHandler3}/>
+           <RoundTwoCard imgs = {r2FourI} qsn = {r2Four} ans = {r2_4Ans} onclick = {answerHandler4}/>
+           <RoundTwoCard imgs = {r2ExtraI} qsn = {r2Extra} ans = {r2_extraAns} onclick = {answerHandler5}/>
          </div>
     )
 }

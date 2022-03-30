@@ -93,8 +93,8 @@ code {
   margin-top: 40px;
 }
 .r2-img-card{
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 500px;
     box-shadow: 1px 1px 1px 1px #f4efe8;
     padding: 5px;
 }
@@ -155,8 +155,8 @@ code {
   margin-top:30px;
 }
 .r2-img-card{
-  width: 400px;
-  height: 300px;
+  width: 600px;
+  height: 500px;
 } 
 .r2-img-card-qsn{
   display: flex;
@@ -174,10 +174,11 @@ code {
 }
 .r2-qsns{
   display: flex;
-  justify-content: center;
-  height: 300px;
-  flex-direction: column;
-  font-size: 20px;
+    justify-content: center;
+    height: 300px;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 600;
 }
 .r2-view-ans{
   display: flex;
@@ -242,4 +243,7 @@ code {
 }
 .r3-wheel{
   display:flex;
+}
+.size{
+  border: 1px solid red;
 }
