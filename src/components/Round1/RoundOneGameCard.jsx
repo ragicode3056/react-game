@@ -29,7 +29,7 @@ export const RoundOneGameCard = (props) =>{
                         </div>
                     </div>
                     <div className="r1-count-card">
-                        {count}
+                       Score {count}
                     </div>
                 </div>
             </div>

@@ -192,7 +192,7 @@ code {
     margin: 0 auto;
     height: 50px;
     color: white;
-    width: 125px;
+    /* width: 125px; */
     align-items: center;
     padding: 5px;
     border-radius: 3px;
@@ -246,4 +246,11 @@ code {
 }
 .size{
   border: 1px solid red;
+}
+.btn:hover, .btn:active{
+  border:none !important;
+}
+.round-headings{
+  font-size:30px;
+  font-weight: 600;
 }

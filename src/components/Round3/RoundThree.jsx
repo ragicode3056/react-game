@@ -10,7 +10,7 @@ export const RoundThree = () =>{
              <NavItems/>
              <RoundThreeHeader/>
              <RoundThreeSpinner/>
-             <RoundCelebration/>
+             {/* <RoundCelebration/> */}
         </div>
        
     )

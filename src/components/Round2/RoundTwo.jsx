@@ -5,7 +5,7 @@ import { RoundTwoHeader } from "./RoundTwoHeader";
 import r2Sample from '../imgs/veticanCity.png';
 import r2OneI from '../imgs/infosys.png';
 import r2TwoI from '../imgs/dubai.png';
-import r2ThreeI from '../imgs/network.png';
+import r2ThreeI from '../imgs/ukraineWar.png';
 import r2FourI from '../imgs/ukraineWar.png';
 import r2ExtraI from '../imgs/network.png'
 import { useState } from "react";
@@ -13,8 +13,8 @@ import { useState } from "react";
 export const RoundTwo = () =>{
     let sampleQsn = "Sample Qsn  - What is the smallest country in the world, based on landmass?";
     let r2One = "Qsn 1 - Who is the founder of Infosys?";
-    let r2Two = "Qsn 2 - Who is this hero ?";
-    let r2Three = "Qsn 3 - Name of this place";
+    let r2Two = "Qsn 2 -  Name of this place";
+    let r2Three = "Qsn 3 - Who is he?";
     let r2Four = "Qsn 4 - Name of the series and character";
     let r2Extra = "Extra Qsn - Which mobile network launched Offers 500GB Data and Hotstar Premium Subscription?"
    
@@ -26,22 +26,22 @@ export const RoundTwo = () =>{
     const [r2_extraAns,setr2_extraAns] = useState("View Answer");
 
    const answerHandler = () =>{
-       setSampleAns("vetican city");
+       setSampleAns("Vetican City");
    }
    const answerHandler1 = () =>{
-    set_r2_1_Ans("CEO");
+    set_r2_1_Ans("NR Narayana Murthy");
     }
     const answerHandler2 = () =>{
-        set_r2_2_Ans("Dubai");
+        set_r2_2_Ans("Dubai,Burj Khalifa");
     }
     const answerHandler3 = () =>{
-        set_r2_3_Ans("Hero");
+        set_r2_3_Ans("Volodymyr Zelensky win");
     }
     const answerHandler4 = () =>{
         set_r2_4_Ans("netflix");
     }
     const answerHandler5 = () =>{
-        setr2_extraAns("netflix");
+        setr2_extraAns("BSNL");
     }
     return (
         <div>
