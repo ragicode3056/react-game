@@ -254,3 +254,18 @@ code {
   font-size:30px;
   font-weight: 600;
 }
+/* r4 box */
+.r4-img-card{
+  width: 800px;
+  height: 500px;
+  box-shadow: 1px 1px 1px 1px #f4efe8;
+  padding: 5px;
+}
+.r4-ul{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.r4-li{
+  margin-bottom: 30px;
+}
