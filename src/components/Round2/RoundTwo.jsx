@@ -6,7 +6,7 @@ import r2Sample from '../imgs/veticanCity.png';
 import r2OneI from '../imgs/infosys.png';
 import r2TwoI from '../imgs/dubai.png';
 import r2ThreeI from '../imgs/ukraineWar.png';
-import r2FourI from '../imgs/ukraineWar.png';
+import r2FourI from '../imgs/blackwidow.png';
 import r2ExtraI from '../imgs/network.png'
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ export const RoundTwo = () =>{
     let r2One = "Qsn 1 - Who is the founder of Infosys?";
     let r2Two = "Qsn 2 -  Name of this place";
     let r2Three = "Qsn 3 - Who is he?";
-    let r2Four = "Qsn 4 - Name of the series and character";
+    let r2Four = "Qsn 4 - Name of the character";
     let r2Extra = "Extra Qsn - Which mobile network launched Offers 500GB Data and Hotstar Premium Subscription?"
    
     const [sampleAns,setSampleAns] = useState("View Answer");
@@ -38,7 +38,7 @@ export const RoundTwo = () =>{
         set_r2_3_Ans("Volodymyr Zelensky win");
     }
     const answerHandler4 = () =>{
-        set_r2_4_Ans("netflix");
+        set_r2_4_Ans("Black Widow");
     }
     const answerHandler5 = () =>{
         setr2_extraAns("BSNL");

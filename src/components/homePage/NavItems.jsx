@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 export const NavItems = () =>{
     return (
-        <nav className = "navbar navbar-expand-sm bg-light flex-end-nav">
+        <nav className = "navbar navbar-expand-sm flex-end-nav headerDiv">
         <ul className = "navbar-nav">
             <li className = "nav-item nav-mrg-rt">
                 <Link to='/'>  Home </Link>

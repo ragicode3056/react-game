@@ -1,4 +1,4 @@
-import logo from '../imgs/l1.png';
+import logo from '../imgs/ofs.png';
 
 export const HomeHeader = () =>{
     return (

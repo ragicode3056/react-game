@@ -10,9 +10,9 @@ export const RoundThreeSpinner = () =>{
     const [finalist,setFinalist] = useState("");
    
     const segments = [
-        'Person A',
-        'Person B',
-        'Person C'
+        'Crispin',
+        'Prabhu',
+        'Sankar'
       ]
       const segColors = [
         '#EE4040',

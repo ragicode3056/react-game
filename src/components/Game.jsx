@@ -4,6 +4,8 @@ import { RoundOne } from "./Round1/RoundOne";
 import { RoundTwo } from "./Round2/RoundTwo";
 import { RoundThree } from "./Round3/RoundThree";
 import { RoundFour } from "./Round4/RoundFour";
+import { RoundFive } from "./Round5/RoundFive";
+import {RoundSix} from './Round6/RoundSix';
 
 
 export const Game = () =>{
@@ -17,6 +19,8 @@ export const Game = () =>{
                     <Route path = '/r2' element = {<RoundTwo/>}></Route>
                     <Route path = '/r3' element = {<RoundThree/>}></Route>
                     <Route path = '/r4' element = {<RoundFour/>}></Route>
+                    <Route path = '/r5' element = {<RoundFive/>}></Route>
+                    <Route path = '/r6' element = {<RoundSix/>}></Route>
                 </Routes>
            </BrowserRouter>
        </div>
